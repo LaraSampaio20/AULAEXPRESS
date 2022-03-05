@@ -11,7 +11,7 @@ app.get("/",(req, res)=>{
 
 app.get('/ user:id', (req, res) =>{
     const {id} = req.params
-    const aux = user.find(user) => user.id == id
+    const aux = user.find((user) => user.id == id)
 
     res.send(aux)
 })
